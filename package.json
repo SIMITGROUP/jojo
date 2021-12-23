@@ -1,5 +1,5 @@
 {
-  "name": "jojo",
+  "name": "@simitgroup/jojo",
   "version": "0.0.1",
   "description": "JoJo Library",
   "main": "dist/index.js",
@@ -17,12 +17,16 @@
     "version": "echo \"No support yet: npm run format && git add -A src\"",
     "postversion": "echo \"No support yet: git push && git push --tags\""
   },
-  "repository": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SIMITGROUP/jojo.git"
+  },
   "keywords": [
+    "simitgroup",
     "jojo"
   ],
   "author": "Sim IT Sdn Bhd",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "peerDependencies": {
     "@types/lodash": "^4.14.176",
     "@types/moment": "^2.13.0",

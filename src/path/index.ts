@@ -1,6 +1,5 @@
 import { isString } from "lodash";
 import urljoin from 'url-join'
-
 /**
  * Convert string / Window / Location to path string.
  * @param window 
@@ -44,11 +43,20 @@ export function toPath(param: unknown): string
  */
 export function joinUrl(url: string, path: string): string
 {
-    return urljoin(url, path)
+    return urljoin(url, path);
 }
 
 export function joinPath(...data: string[]): string
 {
     const path = toPath(urljoin(data))
     return path
+}
+
+
+/**
+ * Extract path from url.
+ */
+export function extractPathFromUrl(url: string): string
+{
+    return toPath(new URL(url).pathname);
 }
